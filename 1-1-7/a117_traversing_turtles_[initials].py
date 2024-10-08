@@ -23,6 +23,7 @@ direction=90
 for t in my_turtles:
   t.color(turtle_colors.pop())
   t.setheading(direction)
+  t.pendown()
   t.goto(startx, starty)
   index+=1
   t.right(45)
