@@ -18,17 +18,18 @@ for s in turtle_shapes:
 # starting position of the turtle
 startx = 0
 starty = 0
-
+direction=90
 #moves the turtle to the place where the shape is made
 for t in my_turtles:
-  t.goto(startx, starty)
   t.color(turtle_colors.pop())
+  t.setheading(direction)
+  t.goto(startx, starty)
   index+=1
   t.right(45)
   t.forward(50)
+  direction=t.heading()
 # where the turtle will move next
-  startx = startx + 50
-  starty = starty + 50
-
+  startx = t.xcor()
+  starty = t.ycor()
 wn = trtl.Screen()
 wn.mainloop()
