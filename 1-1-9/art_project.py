@@ -7,6 +7,7 @@ painter.begin_fill()
 painter.fillcolor('black')
 painter.circle(900)
 painter.end_fill()
+distance=100
 
 def sun():
     painter.up()
@@ -19,9 +20,12 @@ def sun():
     painter.end_fill()
 # Making the sun
 sun()
-bodies = ['dark_golden_rod', 'dark_golden_rod', 'cyan', 'red','orange','dark_golden_rod','blue','cyan']
-for planet in range(8):
-    turtle.shape('circle')
+painter.penup()
+#making the planets around the sun
+
+
+
+    distance +=50
 
 
 
