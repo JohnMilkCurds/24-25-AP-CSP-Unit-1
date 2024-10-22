@@ -17,9 +17,27 @@ def sun():
     painter.fillcolor('yellow')
     painter.circle(80)
     painter.end_fill()
+def star():
+    painter.circle(10)
 # Making the sun
 sun()
 painter.penup()
+painter.goto(100, 100)
+painter.begin_fill()
+painter.fillcolor('white')
+star()
+painter.goto()
+painter.goto()
+painter.goto()
+painter.goto()
+painter.goto()
+painter.goto(-57,)
+painter.goto()
+painter.goto(64,-78)
+painter.goto(-36,-73)
+painter.goto(-74,64)
+painter.goto(50,50)
+
 #making the planets around the sun
 mercury=trtl.Turtle()
 mercury.shape('circle')
