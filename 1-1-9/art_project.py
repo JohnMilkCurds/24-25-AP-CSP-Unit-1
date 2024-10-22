@@ -22,8 +22,8 @@ def star():
 # Making the sun
 sun()
 painter.penup()
-painter.goto(100, 100)
-painter.begin_fill()
+painter.color('white')
+painter.goto(280, 230)
 painter.fillcolor('white')
 star()
 painter.goto()
@@ -39,20 +39,65 @@ painter.goto(-74,64)
 painter.goto(50,50)
 
 #making the planets around the sun
-mercury=trtl.Turtle()
-mercury.shape('circle')
-mercury.color('brown')
-mercury.goto(100,0)
-venus=trtl.Turtle()
-Earth=trtl.Turtle()
-mars=trtl.Turtle()
-jupiter=trtl.Turtle()
-saturn=trtl.Turtle()
-uranus=trtl.Turtle()
-neptune=trtl.Turtle()
 
-
-
+def mercury():
+    mercury=trtl.Turtle()
+    mercury.penup()
+    mercury.shape('circle')
+    mercury.color('gray')
+    mercury.goto(100,0)
+def venus():
+    venus=trtl.Turtle()
+    venus.penup()
+    venus.shape('circle')
+    venus.color('sandybrown')
+    venus.goto(150, 0)
+def earth():
+        earth=trtl.Turtle()
+        earth.penup()
+        earth.shape('circle')
+        earth.color('blue')
+        earth.goto(200, 0)
+def mars():
+    mars=trtl.Turtle()
+    mars.penup()
+    mars.shape('circle')
+    mars.color('tomato')
+    mars.goto(250, 0)
+def jupiter():
+    jupiter=trtl.Turtle()
+    jupiter.penup()
+    jupiter.shape('circle')
+    jupiter.color('darkgoldenrod')
+    jupiter.goto(300, 0)
+def saturn():
+    saturn=trtl.Turtle()
+    saturn.penup()
+    saturn.shape('circle')
+    saturn.color('goldenrod')
+    saturn.goto(350, 0)
+def uranus():
+    uranus=trtl.Turtle()
+    uranus.penup()
+    uranus.shape('circle')
+    uranus.color('navy')
+    uranus.goto(400, 0)
+def neptune():
+    neptune=trtl.Turtle()
+    neptune.penup()
+    neptune.shape('circle')
+    neptune.color('cyan')
+    neptune.goto(450, 0)
+def planets():
+    mercury()
+    venus()
+    earth()
+    mars()
+    jupiter()
+    saturn()
+    uranus()
+    neptune()
+planets()
 
 
 
