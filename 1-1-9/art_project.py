@@ -7,7 +7,6 @@ painter.begin_fill()
 painter.fillcolor('black')
 painter.circle(900)
 painter.end_fill()
-distance=100
 
 def sun():
     painter.up()
@@ -22,10 +21,18 @@ def sun():
 sun()
 painter.penup()
 #making the planets around the sun
+mercury=trtl.Turtle()
+mercury.shape('circle')
+mercury.color('brown')
+mercury.goto(100,0)
+venus=trtl.Turtle()
+Earth=trtl.Turtle()
+mars=trtl.Turtle()
+jupiter=trtl.Turtle()
+saturn=trtl.Turtle()
+uranus=trtl.Turtle()
+neptune=trtl.Turtle()
 
-
-
-    distance +=50
 
 
 
@@ -41,3 +48,15 @@ painter.penup()
 
 wn = trtl.Screen()
 wn.mainloop()
+#BACKUP PLAN
+'''
+bodies = ['gray', 'sandybrown', 'blue', 'tomato','darkgoldenrod','goldenrod','lightblue','navy', 'cyan']
+for planet in range(9):
+    painter.goto(distance, 0)
+    painter.color(bodies[planet])
+    painter.shape('circle')
+    painter.begin_fill()
+    painter.fillcolor(bodies[planet])
+    painter.circle(10)
+    painter.end_fill()
+'''
