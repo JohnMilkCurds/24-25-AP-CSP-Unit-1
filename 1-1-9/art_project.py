@@ -237,22 +237,22 @@ neptune.left(90)
 
 
 
-for planet in range(2):
-    mercury.speed(15)
+for planet in range(5):
+    mercury.speed(10)
     mercury.circle(100)
-    venus.speed(14)
+    venus.speed(10)
     venus.circle(150)
-    earth.speed(13)
+    earth.speed(10)
     earth.circle(200)
-    mars.speed(12)
+    mars.speed(9)
     mars.circle(250)
-    jupiter.speed(11)
+    jupiter.speed(8)
     jupiter.circle(300)
-    saturn.speed(10)
+    saturn.speed(7)
     saturn.circle(350)
-    uranus.speed(9)
+    uranus.speed(6)
     uranus.circle(400)
-    neptune.speed(8)
+    neptune.speed(5)
     neptune.circle(450)
 
 
